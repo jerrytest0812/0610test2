@@ -1,0 +1,15 @@
+name: jerrytest0609
+on: push
+
+jobs:
+  my-job:
+    name: 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v3 
+    - name: Print a greeting
+      run: |
+        python -m pip install --upgrade pip
+        pip3 install -r requirements.txt
+        python3 flask_test.py > log.txt 2>&1 &
