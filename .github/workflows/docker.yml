@@ -26,4 +26,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: jerrytest0812/test01:latest
+          tags: jerrytest0812/cd0610:latest
